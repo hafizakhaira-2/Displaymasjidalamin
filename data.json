@@ -1,0 +1,21 @@
+{
+  "name": "Masjid Display — Islamic Gen Z",
+  "version": "1.0.0",
+  "theme": [
+    "biru",
+    "hitam",
+    "ungu"
+  ],
+  "features": [
+    "Jadwal shalat",
+    "Countdown shalat berikutnya",
+    "Jam real-time",
+    "Mini tasbih counter",
+    "Doa hari ini",
+    "Daily reminder",
+    "Dark/light mode",
+    "Responsive & fluid",
+    "LocalStorage"
+  ],
+  "note": "Waktu shalat pada demo dapat disesuaikan dengan jadwal resmi masjid/lokasi."
+}

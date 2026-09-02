@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<title>Masjid Display — Islamic Gen Z</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-glow"></div>
+<header class="nav">
+  <div class="brand"><span class="brand-mark">☾</span><div><b>MASJID</b><small>DISPLAY</small></div></div>
+  <div class="nav-right">
+    <span id="liveClock">00:00</span>
+    <button id="themeBtn" class="icon-btn" title="Ganti tema">☼</button>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero card">
+    <div class="hero-copy">
+      <span class="pill">✦ Assalamu'alaikum</span>
+      <h1>Selamat Datang<br><span>di Rumah Allah.</span></h1>
+      <p>Ruang digital untuk pengingat ibadah, jadwal masjid, dan vibes kebaikan setiap hari. 🤍</p>
+      <div class="hero-actions">
+        <button class="primary" onclick="document.getElementById('prayer').scrollIntoView({behavior:'smooth'})">Lihat Jadwal ✦</button>
+        <button class="secondary" onclick="toggleDua()">♡ Doa Hari Ini</button>
+      </div>
+    </div>
+    <div class="moon-art"><div class="moon">☾</div><div class="stars">✦　·　✧　·<br>　✦　·　✧</div></div>
+  </section>
+
+  <section class="quote card">
+    <div class="arabic">إِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+    <p>“Sesungguhnya bersama kesulitan ada kemudahan.”</p>
+    <small>— QS. Al-Insyirah: 6</small>
+  </section>
+
+  <section id="prayer" class="section">
+    <div class="section-head"><div><span class="eyebrow">TODAY'S SCHEDULE</span><h2>Jadwal Shalat</h2></div><span id="dateText" class="date"></span></div>
+    <div class="prayer-grid" id="prayerGrid"></div>
+  </section>
+
+  <section class="grid-2">
+    <div class="card countdown">
+      <div class="section-head"><div><span class="eyebrow">NEXT PRAYER</span><h2 id="nextName">—</h2></div><span class="live-dot">● LIVE</span></div>
+      <div id="countdown">--:--:--</div>
+      <p id="nextInfo">Menghitung waktu menuju shalat berikutnya...</p>
+    </div>
+    <div class="card tasbih">
+      <span class="eyebrow">MINI TASBIH</span>
+      <h2>Dzikir Counter 🤍</h2>
+      <div class="counter" id="counter">0</div>
+      <div class="counter-actions"><button class="secondary" id="minusBtn">−</button><button class="primary big" id="plusBtn">Dzikir +1</button><button class="secondary" id="resetBtn">Reset</button></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><span class="eyebrow">DAILY REMINDER</span><h2>Pengingat Kebaikan</h2></div></div>
+    <div class="reminders">
+      <div class="reminder"><span>📖</span><div><b>Baca Al-Qur'an</b><small>Walau satu halaman, tetap berarti.</small></div></div>
+      <div class="reminder"><span>🤲</span><div><b>Perbanyak Dzikir</b><small>Tenangkan hati dengan mengingat Allah.</small></div></div>
+      <div class="reminder"><span>💜</span><div><b>Berbuat Baik</b><small>Senyum, sedekah, atau bantu seseorang hari ini.</small></div></div>
+    </div>
+  </section>
+
+  <div id="duaModal" class="modal"><div class="modal-box card"><button class="close" onclick="toggleDua()">×</button><span class="eyebrow">DOA HARI INI</span><div class="dua-arabic">رَبِّ زِدْنِي عِلْمًا</div><p>“Ya Tuhanku, tambahkanlah kepadaku ilmu.”</p><small>QS. Taha: 114</small></div></div>
+</main>
+
+<footer>☾ <b>Masjid Display</b> · dibuat untuk menyebarkan vibes kebaikan ✦</footer>
+<script src="app.js"></script>
+</body>
+</html>
