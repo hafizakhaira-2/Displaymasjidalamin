@@ -1,0 +1,30 @@
+{
+  "mosque": {
+    "name": "Al Amin",
+    "tagline": "Sebuah ruang untuk pulang kepada-Nya.",
+    "language": "id-ID"
+  },
+  "display": {
+    "theme": "blue-black-purple",
+    "autoLocation": true,
+    "responsive": true,
+    "fluid": true,
+    "fullscreenButton": true
+  },
+  "prayer_api": {
+    "provider": "AlAdhan",
+    "method": 11,
+    "note": "Jadwal dihitung berdasarkan koordinat perangkat. Untuk produksi, sesuaikan metode dan koreksi lokal."
+  },
+  "features": [
+    "Jam real-time",
+    "Tanggal Hijriah/Indonesia-ready",
+    "Lokasi otomatis berbasis izin browser",
+    "Jadwal shalat dinamis",
+    "Highlight shalat berikutnya",
+    "Countdown",
+    "Fullscreen display",
+    "Glassmorphism UI",
+    "Responsive mobile/tablet/TV"
+  ]
+}
