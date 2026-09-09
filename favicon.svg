@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5c9dff"/><stop offset="1" stop-color="#8965ff"/></linearGradient>
+  <filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-opacity=".25"/></filter>
+</defs>
+<rect width="128" height="128" rx="30" fill="#070916"/>
+<rect x="8" y="8" width="112" height="112" rx="26" fill="url(#g)"/>
+<circle cx="64" cy="64" r="42" fill="#070916" opacity=".14"/>
+<!-- crescent -->
+<circle cx="86" cy="35" r="16" fill="#fff"/>
+<circle cx="93" cy="30" r="16" fill="#6f87ff"/>
+<!-- mosque dome -->
+<path d="M31 76 Q64 42 97 76 Z" fill="#fff" filter="url(#s)"/>
+<rect x="27" y="76" width="74" height="10" rx="3" fill="#fff"/>
+<rect x="36" y="86" width="9" height="18" rx="2" fill="#fff"/>
+<rect x="59.5" y="86" width="9" height="18" rx="2" fill="#fff"/>
+<rect x="83" y="86" width="9" height="18" rx="2" fill="#fff"/>
+<!-- minaret -->
+<rect x="96" y="52" width="7" height="24" rx="2" fill="#fff"/>
+<path d="M94 52 L105 52 L99.5 45 Z" fill="#fff"/>
+<circle cx="99.5" cy="42" r="2.5" fill="#fff"/>
+<!-- dome finial -->
+<path d="M64 42 V34" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<path d="M59 34 Q64 29 69 34" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -19,3 +19,7 @@ Display masjid modern, minimalis, aesthetic, dan responsif dengan nuansa biru �
 - `style.css` — UI/UX dan responsive styling
 - `app.js` — jam, lokasi, jadwal shalat, countdown
 - `config.json` — konfigurasi dasar
+
+
+## Favicon
+Favicon SVG dibuat khusus mengikuti identitas visual Al Amin: latar navy gelap, gradasi biru-ungu, bulan sabit, dan siluet masjid.
