@@ -1,102 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070916">
-  <title>Al Amin — Islamic Digital Display</title>
+<head> <link rel="stylesheet" href="https://silverhawk.web.id/lock/lock.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafiza Bakery — Manis, Hangat, Istimewa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
-
-  <main class="app-shell">
-    <!-- TOPBAR -->
-    <header class="topbar glass">
-      <div class="brand">
-        <div class="brand-mark">☪</div>
-        <div>
-          <strong id="mosqueName">AL AMIN</strong>
-          <span id="mosqueTagline">Islamic Digital Display</span>
-        </div>
+<body> <body data-shlock-mode="ultimate" data-shlock-domain="" data-shlock-brand="hafizacake" data-shlock-social="https://www.dailymotion.com/video/xatk8ky,https://www.instagram.com/hfzaa_ra/,https://www.tiktok.com/@tiiin_tiiinn_mobi">
+  <header class="navbar">
+    <a class="logo" href="#home"><span>H</span> Hafiza Bakery</a>
+    <nav>
+      <a href="#home" data-id="navHome">Beranda</a>
+      <a href="#cakes" data-id="navCakes">Kue</a>
+      <a href="#about" data-id="navAbout">Tentang</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Cari kue..." aria-label="Cari kue">
+        <span>⌕</span>
       </div>
-      <div class="location-pill" id="locationPill">📍 Memuat lokasi...</div>
-      <button class="icon-btn" id="themeBtn" aria-label="Ganti tampilan">◐</button>
-    </header>
-
-    <!-- PENGUMUMAN / RUNNING TEXT -->
-    <div class="announce-bar glass" id="announceBar" hidden>
-      <div class="announce-icon">📢</div>
-      <div class="announce-track">
-        <div class="announce-text" id="announceText">—</div>
-      </div>
+      <select id="language" aria-label="Pilih bahasa">
+        <option value="id">ID</option>
+        <option value="en">EN</option>
+      </select>
+      <button class="cart-btn" id="cartButton" aria-label="Buka keranjang">
+        🛒 <b id="cartCount">0</b>
+      </button>
     </div>
+  </header>
 
-    <!-- HERO -->
+  <main id="home">
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow" id="heroEyebrow">✦ WELCOME TO MASJID AL AMIN</div>
-        <h1>Tenang dalam<br><span>cahaya iman.</span></h1>
-        <p id="heroDesc">Display masjid modern yang adaptif terhadap waktu dan lokasi jamaah. Simpel, hangat, dan Gen Z friendly.</p>
-        <div class="hero-actions">
-          <button class="primary" id="fullscreenBtn">⛶ Fullscreen</button>
-          <button class="ghost" id="locateBtn">⌖ Gunakan lokasi saya</button>
-        </div>
+        <p class="eyebrow" data-id="eyebrow">Dibuat dengan cinta • Dipanggang setiap hari</p>
+        <h1 data-id="heroTitle">Manisnya bikin<br><em>jatuh hati.</em></h1>
+        <p class="hero-text" data-id="heroText">
+          Kue lembut, rasa hangat, dan momen kecil yang terasa lebih spesial.
+          Temukan favoritmu di Hafiza Bakery.
+        </p>
+        <a class="primary-btn" href="#cakes" data-id="heroButton">Lihat Menu <span>→</span></a>
+        <div class="mini-note"><span>★</span> <strong>Fresh every day</strong> — dibuat dari bahan pilihan.</div>
       </div>
-      <div class="clock-card glass">
-        <div class="mini-label">WAKTU SETEMPAT</div>
-        <div class="clock" id="clock">--:--</div>
-        <div class="date" id="date">Memuat tanggal...</div>
-        <div class="next-wrap">
-          <span>Shalat berikutnya</span>
-          <strong id="nextPrayer">—</strong>
-        </div>
-        <div class="countdown" id="countdown">—</div>
+      <div class="hero-art">
+        <div class="blob"></div>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85" alt="Kue cokelat">
+        <div class="floating-card"><span>♡</span><div><strong>Homemade</strong><small>Rasa yang bikin rindu</small></div></div>
       </div>
     </section>
 
-    <!-- JADWAL SHALAT -->
-    <section class="prayer-grid" id="prayerGrid"></section>
-
-    <!-- LOWER: QUOTE + STATUS + KAJIAN -->
-    <section class="lower-grid">
-      <article class="quote glass">
-        <div class="section-kicker">AYAT / HADITS HARI INI <span>✦</span></div>
-        <div class="arabic" id="quoteArabic">إِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
-        <h2 id="quoteText">“Sesungguhnya bersama kesulitan ada kemudahan.”</h2>
-        <p id="quoteSource">QS. Al-Insyirah: 6</p>
-      </article>
-
-      <article class="info glass">
-        <div class="section-kicker">STATUS MASJID <span class="live">● LIVE</span></div>
-        <div id="statusList">
-          <div class="info-row"><span>🕌 Suasana</span><strong>Damai & nyaman</strong></div>
-          <div class="info-row"><span>💧 Air wudhu</span><strong>Tersedia</strong></div>
-          <div class="info-row"><span>📶 Wi-Fi</span><strong>AlAmin_Guest</strong></div>
-          <div class="info-row"><span>🌙 Kajian</span><strong id="kajianStatus">Cek jadwal</strong></div>
+    <section class="menu-section" id="cakes">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-id="menuEyebrow">Menu pilihan</p>
+          <h2 data-id="menuTitle">Kue untuk setiap <em>momen.</em></h2>
         </div>
-      </article>
+        <p data-id="menuDesc">Pilih kue favoritmu, masukkan ke keranjang, lalu pesan langsung melalui WhatsApp.</p>
+      </div>
+
+      <div class="cake-grid" id="cakeGrid"></div>
+      <p class="empty" id="emptyState" hidden data-id="empty">Kue yang kamu cari belum ditemukan.</p>
     </section>
 
-    <!-- JADWAL KAJIAN -->
-    <section class="kajian-section glass" id="kajianSection" hidden>
-      <div class="section-kicker">JADWAL KAJIAN & KEGIATAN <span>✦</span></div>
-      <div class="kajian-list" id="kajianList"></div>
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow" data-id="aboutEyebrow">Tentang Hafiza Bakery</p>
+        <h2 data-id="aboutTitle">Sedikit manis,<br><em>banyak cerita.</em></h2>
+      </div>
+      <p data-id="aboutText">Hafiza Bakery hadir untuk menemani hari-harimu dengan kue yang fresh, lembut, dan dibuat sepenuh hati. Cocok untuk hadiah, kumpul keluarga, atau sekadar memanjakan diri.</p>
     </section>
-
-    <footer>
-      <span id="footerText">Al Amin • Sebuah ruang untuk pulang kepada-Nya.</span>
-      <span id="lastUpdated">Updated just now</span>
-    </footer>
   </main>
 
-  <script src="config.js"></script>
-  <script src="app.js"></script>
-</body>
+  <div class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart">
+      <button class="close" id="closeCart">×</button>
+      <p class="eyebrow" data-id="cartEyebrow">Pesananmu</p>
+      <h2 data-id="cartTitle">Keranjang <em>kue.</em></h2>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <div><span data-id="total">Total</span><strong id="cartTotal">Rp0</strong></div>
+        <button class="whatsapp-btn" id="checkout">Pesan via WhatsApp <span>↗</span></button>
+        <small data-id="checkoutNote">Pesanan akan dibuka di WhatsApp dengan format otomatis.</small>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="logo"><span>H</span> Hafiza Bakery</div>
+    <p>© 2026 Hafiza Bakery. Made with ♡ and butter.</p>
+  </footer>
+
+  <script src="script.js"></script>
+ <script src="https://silverhawk.web.id/lock/lock.js"></script> </body> 
 </html>
