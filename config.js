@@ -11,7 +11,7 @@
 const CONFIG = {
   // URL Web App Google Apps Script (setelah di-deploy)
   // Contoh: "https://script.google.com/macros/s/AKfycb.../exec"
-  APPS_SCRIPT_URL: "",
+  APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbxafPj-Zlnx2h6PYWn2lYoKJCjY3uAEgUZWffbJVcfVdS5ReBlMP-1N-TmqM_qPXrg/exec",
 
   // Interval refresh data dari Sheets (ms) — default 3 menit
   REFRESH_INTERVAL: 3 * 60 * 1000,
